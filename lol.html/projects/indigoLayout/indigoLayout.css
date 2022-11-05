@@ -5,8 +5,8 @@
 
 }
 #containerAll {
-    width: 1100px;
-}
+    width: 1050px;
+} 
 
 #link {
     align-items: center;
@@ -16,17 +16,19 @@
 }
 
 #link a {
+    margin: 0;
     color: #555555;
     text-decoration: none;
-    margin-right:15px;
     padding: 5px;
+    font-family: "Scada", arial, sans-serif;
+    font-size: 12px;
 }
 
 #link a:hover{background: #FFF;}
 
-#link a:nth-child(-n+2) {
+#link a:nth-child(2) {
     float: left;
-    margin: 0 250px 0 0;
+    margin: 0 40% 0 0;
 }
 
 #link a:nth-child(n+3) {
@@ -35,44 +37,103 @@
 
 
 #photoIndigo {
+    margin-top: 10px;
     float: left;
 }
 
+#photoIndigo:hover{opacity: 0.7;}
+
 #telephone {
+    margin-top: 15px;
     text-decoration: none;
     float: right;
     font-size: 25px;
+    font-family: 'Roboto Condensed',Arial narrow,Arial,sans-serif;
 }
 
+
 #linkMenu {
+    margin: 15px 0 0 0;
     list-style-type: none;
     text-decoration: none;
-    padding: 15px;
+    width: 1050px;
     font-family: "Scada", arial, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 13px;
     background: #333;
     display: inline-flex;
+    height: 100%;
+    align-items: center;
+    padding-inline-start: 0;
+}
+
+#linkMenu li a {
+    padding: 10px 10px 10px 10px;
+    display: inline-flex;
+    text-decoration: none;
+   
+    color: #fff;
+    margin: 0 0 0 0;
+    background: url(photo/navdiv.png) no-repeat right 50%;
     align-items: center;
 }
 
-#linkMenu a {
-    padding: 0 5px 0 5px;
-    height: 51px;
-    color: #fff;
-    border-right: 1px solid red;
-    margin-left: 15px;
+#linkMenu li {
+    margin: 0;
 }
+#linkMenu li a:hover{background: #9B20FF}
 
 #breadcrumbs {
-    display: flex;
+    display: inline-flex;
+   
+}
+
+#breadcrumbs p {
+    margin: 10px 10px 0 0;
+    padding-right: 1px;
+}
+
+#photoText {
+    width: 79%;
 }
 
 
+#containerLeft {
+    float: left;
+    width: 80%;
+}
+
+#violetHrLeft {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #9B20FF;;
+    width: 100%;
+    height: 10px;
+
+}
 
 
+#containerRight {
+    float: right;
+    width: 20%;
+    height: 1337px;
+}
+
+#blackHrRight {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 10px;
+    background: #555555;
+}
+
+#inputSearch {
+    width: 97%;
+    border: 1px solid #dcdcdc;
+}
 
 
-
-
+#footer {
+    display: block;
+}

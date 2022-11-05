@@ -1,17 +1,21 @@
 $(".h1").css({
-    "margin-top" : "100px",
-    "font-family" : "Arial"
+    "margin" : "50px 0 0 0",
+    "font-family" : "Arial",
+    "font-size" : "25px",
+    "width" : "79%"
+
 })
 
 $(".textP").css({
     "font-family" : "Arial",
-    "font-size" : "20px",
-    "margin" : "20px"
+    "font-size" : "17px",
+    "margin" : "20px 0 20px 20px",
+    "width" : "79%"
 })
 
 
 
-let date = new Date (Date.getFullYear, Date.getMonth)
+let date = new Date ().toLocaleDateString()
 
 let timeHeader = document.getElementById("timeHeader").innerHTML = date
 
