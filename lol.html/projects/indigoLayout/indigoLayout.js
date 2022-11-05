@@ -3,8 +3,15 @@ $(".h1").css({
     "font-family" : "Arial"
 })
 
-$("p").css({
+$(".textP").css({
     "font-family" : "Arial",
-    "font-size" : "20px"
-
+    "font-size" : "20px",
+    "margin" : "20px"
 })
+
+
+
+let date = new Date (Date.getFullYear, Date.getMonth)
+
+let timeHeader = document.getElementById("timeHeader").innerHTML = date
+
