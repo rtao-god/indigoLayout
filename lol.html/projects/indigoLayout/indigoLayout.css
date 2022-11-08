@@ -6,6 +6,7 @@
 }
 #containerAll {
     width: 1050px;
+    color: #555555
 } 
 
 #link {
@@ -28,7 +29,7 @@
 
 #link a:nth-child(2) {
     float: left;
-    margin: 0 40% 0 0;
+    margin: 0 432.5px 0 0;
 }
 
 #link a:nth-child(n+3) {
@@ -37,23 +38,32 @@
 
 
 #photoIndigo {
-    margin-top: 10px;
+    margin-top: 20px;
     float: left;
 }
 
-#photoIndigo:hover{opacity: 0.7;}
+#photoIndigo :hover{opacity: 0.7;}
+#telephone :hover{opacity: 0.7;}
 
 #telephone {
-    margin-top: 15px;
-    text-decoration: none;
+    margin-top: 20px;
     float: right;
-    font-size: 25px;
+    font-size: 20px;
+    text-decoration: none;
     font-family: 'Roboto Condensed',Arial narrow,Arial,sans-serif;
+}
+
+#telNomer {
+    font-size: 29px;
+}
+
+#telText {
+    font-size: 16px;
 }
 
 
 #linkMenu {
-    margin: 15px 0 0 0;
+    margin: 20px 0 0 0;
     list-style-type: none;
     text-decoration: none;
     width: 1050px;
@@ -82,11 +92,11 @@
 #linkMenu li {
     margin: 0;
 }
+
 #linkMenu li a:hover{background: #9B20FF}
 
 #breadcrumbs {
     display: inline-flex;
-   
 }
 
 #breadcrumbs p {
@@ -95,13 +105,13 @@
 }
 
 #photoText {
-    width: 79%;
+    width: 75%;
 }
 
 
 #containerLeft {
     float: left;
-    width: 80%;
+    width: 75%;
 }
 
 #violetHrLeft {
@@ -110,13 +120,12 @@
     background: #9B20FF;;
     width: 100%;
     height: 10px;
-
 }
 
 
 #containerRight {
     float: right;
-    width: 20%;
+    width: 25%;
     height: 1337px;
 }
 
@@ -131,9 +140,87 @@
 #inputSearch {
     width: 97%;
     border: 1px solid #dcdcdc;
+    padding: 10px;
+    font-size: 10px;
+    margin-bottom: 20px;
 }
+
+
+#ContainerRightH1TextBook {
+    margin: 30px 0 15px 0;
+    font-size: 17px;
+}
+
+#containerRightTableTextBook a {
+    border-top: 1px solid #dcdcdc;
+    width: 100%;
+    color: #555555;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 9px 20px 5px 0;
+    /* background: url(photo/rightarrow.png) 95% 48% no-repeat; */
+
+   
+}
+
+#containerRightTableTextBook span {
+    right: 40px;
+    position: relative;
+    border: solid rgb(98, 98, 98);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    top: -20px;
+    left: 50%;
+    padding: 3px;
+    margin: 0 0 0 100%;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    animation: arrow 10s;
+}
+
+#containerRightTableTextBook li a:hover {opacity: 0.7;}
+#containerRightTableTextBook li a:hover {animation: arrow 10s;}
+
+@keyframes arrow1 {
+    0% {right: 0;}
+
+    50% {left:  -2px; background: rgb(185, 140, 192);}
+
+    100% {left:  -5px; background: rgb(255, 255, 255)}
+}
+
+#containerRightTableTextBook a:nth-child(-n+2) {
+    padding: 9px 20px 5px 5px;
+}
+
+#containerRightTableTextBook li {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 #footer {
     display: block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
