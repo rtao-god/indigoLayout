@@ -3,7 +3,6 @@ $(".h1").css({
     "font-family" : "Arial",
     "font-size" : "25px",
     "width" : "75%"
-
 })
 
 $(".textP").css({

@@ -43,12 +43,12 @@
                 <li><a href="#" >УЧЕБНИК CSS</a> </li>
             </ul>
 
-            <a href="" id="breadcrumbs">
-                <p>Главная »</p>
-                <p> Современный учебник CSS »</p>
-                <p>Использование CSS »</p>
-                <p> Межсимвольный, межстрочный интервал CSS. Расстояние между словами</p>
-            </a>
+            <div id="breadcrumbs">
+                <a href="#"> Главная »</a>
+                <a href="#"> Современный учебник CSS »</a>
+                <a href="#"> Использование CSS »</a>
+                <p id="siteTheme"> Межсимвольный, межстрочный интервал CSS. Расстояние между словами</p>
+            </div>
 
         
         
@@ -122,33 +122,57 @@
         
 
         <div id="containerRight">
+
             <hr id="blackHrRight">
-            <p>Поиск</p>
+
+            <h1 id="SearchH1">Поиск</h1>
+
             <br>
+
             <input id="inputSearch" placeholder="Введите запрос и нажмите Enter">
 
-            <h1 id="ContainerRightH1TextBook">УЧЕБНИК CSS</h1>
+            <h1 id="containerRightH1Book">УЧЕБНИК CSS</h1>
 
-                <ul id="containerRightTableTextBook">
-                    
-                    <li> <a href="#">СОДЕРЖАНИЕ<span></span></a></li>
-                    <li> <a href="#">ЧАСТЬ I. Азы CSS<span></span></a></li>
-                    <li> <a href="#">1. Современное применение HTML<span></span></a></li>
-                    <li> <a href="#">2. Синтаксис CSS. Подключение внешних таблиц. Первый урок<span></span></a></li>
-                    <li> <a href="#">3. Изучение селекторов<span></span></a></li>
-                    <li> <a href="#">4. Наследование в CSS<span></span></a></li>
-                    <li> <a href="#">5. Каскадность. Приоритеты стилей<span></span></a></li>
-                    <li> <a href="#">ЧАСТЬ II. Использование CSS<span></span></a></li>
-                    <li> <a href="#">1. Работа с текстом<span></span></a></li>
-                    <li> <a href="#">2. Работа с блоками<span></span></a></li>
-                    <li> <a href="#">3. Работа с графикой<span></span></a></li>
-                    <li> <a href="#">4. Ссылки и навигация<span></span></a></li>
-                    <li> <a href="#">5. Трансформирование и анимация<span></span></a></li>
-                    <li> <a href="#">6. Таблицы и формы<span></span></a></li>
-                    <li> <a href="#">ЧАСТЬ III. Разметка CSS<span></span></a></li>
-                    <li> <a href="#">ЗАКЛЮЧЕНИЕ<span></span></a></li>
-                </ul>
-        </div>
+                <div id="containerRightTable">
+
+                    <ul>
+                        <li> <a href="#">СОДЕРЖАНИЕ<span></span></a></li>
+                    </ul>
+                        
+                        <ul>
+                            <li> <a href="#">ЧАСТЬ I. Азы CSS<span></span></a>
+                                <ul>
+                                    <li> <a href="#">1. Современное применение HTML<span></span></a></li>
+                                    <li> <a href="#">2. Синтаксис CSS. Подключение внешних таблиц. Первый урок<span></span></a></li>
+                                    <li> <a href="#">3. Изучение селекторов<span></span></a></li>
+                                    <li> <a href="#">4. Наследование в CSS<span></span></a></li>
+                                    <li> <a href="#">5. Каскадность. Приоритеты стилей<span></span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <ul> 
+                            <li> <a href="#">ЧАСТЬ II. Использование CSS<span></span></a>
+                                <ul>
+                                    <li> <a href="#">1. Работа с текстом<span></span></a></li>
+                                    <li> <a href="#">2. Работа с блоками<span></span></a></li>
+                                    <li> <a href="#">3. Работа с графикой<span></span></a></li>
+                                    <li> <a href="#">4. Ссылки и навигация<span></span></a></li>
+                                    <li> <a href="#">5. Трансформирование и анимация<span></span></a></li>
+                                    <li> <a href="#">6. Таблицы и формы<span></span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                            <ul> 
+                                <li><a href="#">ЧАСТЬ III. Разметка CSS<span></span></a></li>
+                            </ul>
+
+                            <ul>
+                                <li> <a href="#">ЗАКЛЮЧЕНИЕ<span></span></a></li>
+                            </ul>
+                
+                </div>
       
 
     </div>
