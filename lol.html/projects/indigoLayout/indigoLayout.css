@@ -1,39 +1,52 @@
-
-* {
-    padding-top: 0;
-    margin: 0 auto;
-
+body {
+    margin: 0;
+    padding: 0;
 }
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
 #containerAll {
+    height: 100%;
+    margin: 0 auto 0 auto;
     width: 1050px;
-    color: #555555
+    padding: 0;
+    color: #555555;
 } 
 
 #link {
     align-items: center;
     display: flex;
-    width: 100%;
     background: #EEEEEE;
+    padding: 3px 0 3px 0;
+ 
 }
 
 #link a {
     margin: 0;
     color: #555555;
     text-decoration: none;
-    padding: 5px;
     font-family: "Scada", arial, sans-serif;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 10px;
+    padding: 10px 5px 10px 5px;
+    -webkit-transition: height .25s,line-height .25s, background .25s,visibility .25s;
+    transition: all .3s ease 0s;
 }
 
 #link a:hover{background: #FFF;}
 
-#link a:nth-child(2) {
+#box1 {
+    padding: 3px 0 3px 0;
+    margin: 0;
     float: left;
-    margin: 0 432.5px 0 0;
 }
 
-#link a:nth-child(n+3) {
+#box2 {
+    padding: 3px 0 3px 0;
     float: right;
+    margin: 0 0 0 auto;
 }
 
 
@@ -46,19 +59,22 @@
 #telephone :hover{opacity: 0.7;}
 
 #telephone {
-    margin-top: 20px;
+    margin: 20px 0 0 0;
     float: right;
-    font-size: 20px;
     text-decoration: none;
-    font-family: 'Roboto Condensed',Arial narrow,Arial,sans-serif;
+    font-family: 'Roboto Condensed', Arial narrow, Arial, sans-serif;
 }
 
 #telNomer {
-    font-size: 29px;
+    margin: 0 0 0 0;
+    color: #9B20FF;
+    font-size: 30px;
 }
 
 #telText {
-    font-size: 16px;
+    margin: 0 0 0 0;
+    color: #9B20FF;
+    font-size: 25px;
 }
 
 
@@ -76,13 +92,14 @@
     height: 100%;
     align-items: center;
     padding-inline-start: 0;
+    -webkit-transition: height .25s,line-height .25s, background .25s,visibility .25s;
+    transition: all .3s ease 0s;
 }
 
 #linkMenu li a {
     padding: 10px 10px 10px 10px;
     display: inline-flex;
     text-decoration: none;
-   
     color: #fff;
     margin: 0 0 0 0;
     background: url(photo/navdiv.png) no-repeat right 50%;
@@ -95,23 +112,30 @@
 
 #linkMenu li a:hover{background: #9B20FF}
 
+
 #breadcrumbs {
-    display: inline-flex;
+    max-width: 100%;
+    display: flex;
+    padding-right: 100px;
+    margin: 10px;
+    color:rgb(98, 98, 98);
+}
+
+#breadcrumbs a {
+    color:rgb(64, 64, 64);
 }
 
 #breadcrumbs p {
-    margin: 10px 10px 0 0;
-    padding-right: 1px;
+    margin: 0;
 }
 
-#photoText {
-    width: 75%;
-}
 
+#breadcrumbs a:hover{color: #9B20FF;}
 
 #containerLeft {
     float: left;
     width: 75%;
+    clear: left;
 }
 
 #violetHrLeft {
@@ -123,10 +147,20 @@
 }
 
 
+#photoText {
+    width: 90%;
+    cursor: pointer;
+}
+
+#photoText:hover{opacity: 0.9;}
+
+
+
 #containerRight {
     float: right;
     width: 25%;
-    height: 1337px;
+    height: 1600px;
+    clear: right;
 }
 
 #blackHrRight {
@@ -134,7 +168,13 @@
     margin-bottom: 30px;
     width: 100%;
     height: 10px;
-    background: #555555;
+    border-left: 1px solid #555;
+    background: #555;
+}
+
+#SearchH1 {
+    margin: 30px 0 15px 0;
+    font-size: 17px;
 }
 
 #inputSearch {
@@ -145,82 +185,120 @@
     margin-bottom: 20px;
 }
 
+#inputSearch:focus {outline:0;}
 
-#ContainerRightH1TextBook {
+#containerRightH1Book {
     margin: 30px 0 15px 0;
     font-size: 17px;
 }
 
-#containerRightTableTextBook a {
+#containerRightTable {
+    width: 100%;
+}
+
+#containerRightTable li {
+    -webkit-transition: height .25s,line-height .25s, background .25s,visibility .25s;
+    transition: all .3s ease 0s;
     border-top: 1px solid #dcdcdc;
     width: 100%;
-    color: #555555;
-    display: inline-block;
+    height: auto;
     cursor: pointer;
+    padding: 9px 20px 5px 20px;
+    font-size: 13px;
+    background: url(photo/rightarrow.png) 95% 48% no-repeat;
+}
+
+#containerRightTable ul {
+    padding-inline-start: 0px;
+}
+
+#containerRightTable ul li {
     text-decoration: none;
-    padding: 9px 20px 5px 0;
-    /* background: url(photo/rightarrow.png) 95% 48% no-repeat; */
-
-   
+    color: #777;
 }
 
-#containerRightTableTextBook span {
-    right: 40px;
-    position: relative;
-    border: solid rgb(98, 98, 98);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    top: -20px;
-    left: 50%;
-    padding: 3px;
-    margin: 0 0 0 100%;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    animation: arrow 10s;
+#containerRightTable a {
+    text-decoration: none;
 }
 
-#containerRightTableTextBook li a:hover {opacity: 0.7;}
-#containerRightTableTextBook li a:hover {animation: arrow 10s;}
+#containerRightTable li a :hover {opacity: 0.7;}
 
-@keyframes arrow1 {
-    0% {right: 0;}
+#containerRightTable a :hover {background: #ececec;}
 
-    50% {left:  -2px; background: rgb(185, 140, 192);}
 
-    100% {left:  -5px; background: rgb(255, 255, 255)}
+
+footer {
+    background: #292929;        
+    display: flex;       
+    width: 100%;     
+    height: 100%;
+    color: white;  
+    padding-bottom: 100px;      
+    clear: both;      
 }
 
-#containerRightTableTextBook a:nth-child(-n+2) {
-    padding: 9px 20px 5px 5px;
+footer::-webkit-scrollbar {
+    width: 0;
+  }
+
+#allColumnFooter {
+    font-size: 12px;
+    width: 100%;
+    display: flex;
 }
 
-#containerRightTableTextBook li {
+#footerColumnFirst {
+    margin: 1% 50px 0 225px;
+}
+
+#footerColumnSecond {
+    margin-top: 1%;
+    width: 225px;
+    margin-right: 100px;
+}
+
+#footerColumnThird {
+    margin-top: 1%;
+    width: 250px;
+}
+
+#menuFooterFirst {
     list-style-type: none;
+    padding-inline-start: 0;
+}
+
+#menuFooterFirst li {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    width: 100%;
+    border-top: 1px solid #333;
+    padding: 10px;
+    text-decoration: none;
+    background-image: url(photo/rightarrow-dark.png) 95% 48% no-repeat;
+    -webkit-transition: height .25s,line-height .25s, background .25s,visibility .25s;
+    transition: all .3s ease 0s;
+    border-bottom: 1px dotted #444;
 }
 
 
-eee
-
-
-
-
-
-
-
-
-
-#footer {
-    display: block;
+.footertText a {
+    background: yellow;
+    cursor: pointer;
 }
 
+#menuFooterFirst a :hover {background: rgb(0, 0, 0);} 
+#menuFooterFirst a:hover {background: #500191;}
+
+#footerContactPhoto {
+    cursor: pointer;   
+    border-top: 1px solid #dcdcdc;
+} 
+
+#footerContactPhoto a:hover {opacity: 0.7; background: #500191;}
 
 
-
-
-
-
-
-
-
-
-
+.footerText a:hover {color:#9B20FF;}       
+            
+lol
+               
