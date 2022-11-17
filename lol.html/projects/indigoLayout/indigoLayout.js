@@ -8,8 +8,8 @@ $(".h1").css({
 
 $(".textP").css({
     "font-family" : "Arial",
-    "font-size" : "17px",
-    "margin" : "20px 0 20px 20px",
+    "font-size" : "14px",
+    "margin" : "20px 0 20px 0px",
     "width" : "90%"
 })
 
@@ -18,24 +18,19 @@ $(".tagPreExample").css({
     "font-size" : "15px"
 })
 
+$("#textResult").css({
+    "margin-bottom" : "150px"
+})
 
 
 let date = new Date ().toLocaleDateString()
-
 let timeHeader = document.getElementById("timeHeader").innerHTML = date
 
 
-$("#viloletHrLeft").onmousemove = function(event) {
-    event = event || window.event
 
-    console.log(event)
 
-    
-}
 
-$("#blackHrRight").onmousemove = function(event) {
 
-}
 
 
 

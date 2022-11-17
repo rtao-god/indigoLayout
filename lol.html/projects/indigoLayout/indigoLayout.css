@@ -1,43 +1,53 @@
 
-* {
-    padding-top: 0;
-    margin: 0 auto;
-    color: #777;
-
+body {
+    margin: 0;
+    padding: 0;
 }
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
 #containerAll {
+    height: 100%;
+    margin: 0 auto 0 auto;
     width: 1050px;
-    color: #555555
+    padding: 0;
+    color: #555555;
 } 
 
 #link {
     align-items: center;
     display: flex;
-    width: 100%;
     background: #EEEEEE;
+    padding: 3px 0 3px 0;
+ 
 }
 
 #link a {
-    width: 1050px;
     margin: 0;
     color: #555555;
     text-decoration: none;
-    padding: 5px;
     font-family: "Scada", arial, sans-serif;
     font-weight: 400;
     font-size: 10px;
+    padding: 10px 5px 10px 5px;
+    -webkit-transition: height .25s,line-height .25s, background .25s,visibility .25s;
+    transition: all .3s ease 0s;
 }
 
 #link a:hover{background: #FFF;}
 
-#link a:nth-child(-n+2) {
+#box1 {
+    padding: 3px 0 3px 0;
+    margin: 0;
     float: left;
-    width: auto;
 }
 
-#link a:nth-child(n+3) {
+#box2 {
+    padding: 3px 0 3px 0;
     float: right;
-    width: auto;
+    margin: 0 0 0 auto;
 }
 
 
@@ -50,18 +60,20 @@
 #telephone :hover{opacity: 0.7;}
 
 #telephone {
-    margin-top: 20px;
+    margin: 20px 0 0 0;
     float: right;
     text-decoration: none;
     font-family: 'Roboto Condensed', Arial narrow, Arial, sans-serif;
 }
 
 #telNomer {
+    margin: 0 0 0 0;
     color: #9B20FF;
     font-size: 30px;
 }
 
 #telText {
+    margin: 0 0 0 0;
     color: #9B20FF;
     font-size: 25px;
 }
@@ -81,6 +93,8 @@
     height: 100%;
     align-items: center;
     padding-inline-start: 0;
+    -webkit-transition: height .25s,line-height .25s, background .25s,visibility .25s;
+    transition: all .3s ease 0s;
 }
 
 #linkMenu li a {
@@ -104,7 +118,7 @@
     max-width: 100%;
     display: flex;
     padding-right: 100px;
-    margin-top: 10px;
+    margin: 10px;
     color:rgb(98, 98, 98);
 }
 
@@ -112,11 +126,17 @@
     color:rgb(64, 64, 64);
 }
 
+#breadcrumbs p {
+    margin: 0;
+}
+
+
 #breadcrumbs a:hover{color: #9B20FF;}
 
 #containerLeft {
     float: left;
-    max-width: 75%;
+    width: 75%;
+    clear: left;
 }
 
 #violetHrLeft {
@@ -140,7 +160,8 @@
 #containerRight {
     float: right;
     width: 25%;
-    height: 1337px;
+    height: 1600px;
+    clear: right;
 }
 
 #blackHrRight {
@@ -148,7 +169,8 @@
     margin-bottom: 30px;
     width: 100%;
     height: 10px;
-    background: #555555;
+    border-left: 1px solid #555;
+    background: #555;
 }
 
 #SearchH1 {
@@ -174,56 +196,112 @@
 #containerRightTable {
     width: 100%;
 }
+
 #containerRightTable li {
+    -webkit-transition: height .25s,line-height .25s, background .25s,visibility .25s;
+    transition: all .3s ease 0s;
     border-top: 1px solid #dcdcdc;
     width: 100%;
-    display: inline-block;
+    height: auto;
     cursor: pointer;
     padding: 9px 20px 5px 20px;
-   
+    font-size: 13px;
+    background: url(photo/rightarrow.png) 95% 48% no-repeat;
 }
 
 #containerRightTable ul {
     padding-inline-start: 0px;
 }
 
-#containerRightTable a {
-    list-style: none;
+#containerRightTable ul li {
     text-decoration: none;
     color: #777;
 }
 
-#containerRightTable li a:hover {opacity: 0.7;}
-#containerRightTable li a:hover {background:#fbfffd;}
- #containerRightTable li a:hover {animation: arrow 10s;}
-
-#containerRightTable span {
-    right: 40px;
-    position: relative;
-    border: solid rgb(98, 98, 98);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    margin: 0 0 0 95%;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    animation: arrow 10s;
+#containerRightTable a {
+    text-decoration: none;
 }
 
-@keyframes arrow {
-    
-    0% {right: 0;}
+#containerRightTable li a :hover {opacity: 0.7;}
 
-    50% {right: 3px;}
+#containerRightTable a :hover {background: #ececec;}
 
-    100% {right: 5px;}
+
+
+footer {
+    background: #292929;        
+    display: flex;       
+    width: 100%;     
+    height: 100%;
+    color: white;  
+    padding-bottom: 100px;      
+    clear: both;      
+}
+
+footer::-webkit-scrollbar {
+    width: 0;
+  }
+
+#allColumnFooter {
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+}
+
+#footerColumnFirst {
+    margin: 1% 50px 0 225px;
+}
+
+#footerColumnSecond {
+    margin-top: 1%;
+    width: 225px;
+    margin-right: 100px;
+}
+
+#footerColumnThird {
+    margin-top: 1%;
+    width: 250px;
+}
+
+#menuFooterFirst {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+#menuFooterFirst li {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    width: 100%;
+    border-top: 1px solid #333;
+    padding: 10px;
+    text-decoration: none;
+    background-image: url(photo/rightarrow-dark.png) 95% 48% no-repeat;
+    -webkit-transition: height .25s,line-height .25s, background .25s,visibility .25s;
+    transition: all .3s ease 0s;
+    border-bottom: 1px dotted #444;
+}
+
+
+.footertText a {
+    background: yellow;
+    cursor: pointer;
+}
+
+#menuFooterFirst a :hover {background: rgb(0, 0, 0);} 
+#menuFooterFirst a:hover {background: #500191;}
+
+#footerContactPhoto {
+    cursor: pointer;   
+    border-top: 1px solid #dcdcdc;
 } 
 
+#footerContactPhoto a:hover {opacity: 0.7; background: #500191;}
 
 
-#footer {
-    display: block;
-}
+.footerText a:hover {color:#9B20FF;}
+
+
 
 
 
