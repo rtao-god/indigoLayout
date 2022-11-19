@@ -135,7 +135,7 @@ body {
 
 #containerLeft {
     float: left;
-    width: 75%;
+    width: 70%;
     clear: left;
 }
 
@@ -159,8 +159,7 @@ body {
 
 #containerRight {
     float: right;
-    width: 25%;
-    height: 1600px;
+    width: 30%;
     clear: right;
 }
 
@@ -169,8 +168,8 @@ body {
     margin-bottom: 30px;
     width: 100%;
     height: 10px;
-    border-left: 1px solid #555;
-    background: #555;
+    border-left: 1px solid #333;
+    background: #333;
 }
 
 #SearchH1 {
@@ -193,38 +192,57 @@ body {
     font-size: 17px;
 }
 
-#containerRightTable {
+#listMenu {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.listMenuNestedContainerRight {
+    list-style: none;
+    padding-inline-start: 20px;
+}
+
+#listMenuContainerRight li a {
+    color: #777;
+}
+
+.li
+
+/* #containerRightTable li, .containerRightMenu {
     width: 100%;
+    color: #777;
+    font-family: "Arial", arial, sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    -webkit-transition: height .25s,line-height .25s, background .25s,visibility .25s;
+    transition: all .3s ease 0s;
+    background: url(photo/rightarrow.png) 95% 48% no-repeat;
+    list-style: none;
 }
 
 #containerRightTable li {
-    -webkit-transition: height .25s,line-height .25s, background .25s,visibility .25s;
-    transition: all .3s ease 0s;
-    border-top: 1px solid #dcdcdc;
     width: 100%;
-    height: auto;
-    cursor: pointer;
-    padding: 9px 20px 5px 20px;
-    font-size: 13px;
-    background: url(photo/rightarrow.png) 95% 48% no-repeat;
-}
+    border-top: 1px solid #dcdcdc;
+    padding: 9px 0 5px 20px;
+}   
 
-#containerRightTable ul {
-    padding-inline-start: 0px;
-}
-
-#containerRightTable ul li {
-    text-decoration: none;
-    color: #777;
+.containerRightMenu {
+    padding: 5px 0 5px 0;
+    display: block;
 }
 
 #containerRightTable a {
     text-decoration: none;
 }
 
-#containerRightTable li a :hover {opacity: 0.7;}
+.li-not-in-nested-list {
+    padding: 5px 0 5px 0;
+    width: 100%;
+} */
 
-#containerRightTable a :hover {background: #ececec;}
+#containerRightTable a :hover {opacity: 0.7; background: #ececec;}
+
+
 
 
 
@@ -243,7 +261,8 @@ footer::-webkit-scrollbar {
   }
 
 #allColumnFooter {
-    font-size: 12px;
+    font-family: "Arial", arial, sans-serif;
+    font-size: 13px;
     width: 100%;
     display: flex;
 }
@@ -269,6 +288,7 @@ footer::-webkit-scrollbar {
 }
 
 #menuFooterFirst li {
+    font-family: "Arial", arial, sans-serif;
     display: inline-block;
     font-size: 15px;
     color: #fff;
@@ -276,16 +296,19 @@ footer::-webkit-scrollbar {
     border-top: 1px solid #333;
     padding: 10px;
     text-decoration: none;
-    background-image: url(photo/rightarrow-dark.png) 95% 48% no-repeat;
+    background: url(photo/rightarrow-dark.png) 95% 48% no-repeat;
     -webkit-transition: height .25s,line-height .25s, background .25s,visibility .25s;
     transition: all .3s ease 0s;
     border-bottom: 1px dotted #444;
 }
 
 
-.footertText a {
-    background: yellow;
+.footerText a {
+    color: white;
+    text-decoration: 0;
+    display: inline-block;
     cursor: pointer;
+    padding-bottom: 5px;
 }
 
 #menuFooterFirst a :hover {background: rgb(0, 0, 0);} 
@@ -301,7 +324,6 @@ footer::-webkit-scrollbar {
 
 .footerText a:hover {color:#9B20FF;}       
             
-lol
                
 
 
