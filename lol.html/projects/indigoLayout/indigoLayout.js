@@ -26,6 +26,8 @@ $("#textResult").css({
 let date = new Date ().toLocaleDateString()
 let timeHeader = document.getElementById("timeHeader").innerHTML = date
 
+let views = document.querySelector(".views")
+
 
 
 
