@@ -1,4 +1,4 @@
-$(".h1").css({
+$(".h1").css ({
     "margin" : "50px 0 0 0",
     "font-family" : "Arial",
     "font-size" : "25px",
@@ -6,22 +6,24 @@ $(".h1").css({
     "color" : "black"
 })
 
-$(".textP").css({
+$(".textP").css ({
     "font-family" : "Arial",
     "font-size" : "14px",
     "margin" : "20px 0 20px 0px",
     "width" : "90%"
 })
 
-$(".tagPreExample").css({
+$(".tagPreExample").css ({
     "color" : "purple",
     "font-size" : "15px"
 })
 
-$("#textResult").css({
+$("#textResult").css ({
     "margin-bottom" : "150px"
 })
 
 
 let date = new Date ().toLocaleDateString()
 let timeHeader = document.getElementById("timeHeader").innerHTML = date
+
+let views = document.querySelector(".views")

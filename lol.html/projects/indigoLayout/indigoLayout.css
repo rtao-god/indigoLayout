@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> lol
 body {
     margin: 0;
     padding: 0;
@@ -118,18 +115,19 @@ body {
 
 
 #breadcrumbs {
-    max-width: 100%;
     display: flex;
-    padding-right: 100px;
     margin: 10px;
     color:rgb(98, 98, 98);
 }
 
 #breadcrumbs a {
+    padding-right: 4px;
+    padding-left: 4px;
     color:rgb(64, 64, 64);
 }
 
 #breadcrumbs p {
+    padding-left: 4px;
     margin: 0;
 }
 
@@ -138,11 +136,7 @@ body {
 
 #containerLeft {
     float: left;
-<<<<<<< HEAD
-    width: 75%;
-=======
     width: 70%;
->>>>>>> lol
     clear: left;
 }
 
@@ -166,13 +160,9 @@ body {
 
 #containerRight {
     float: right;
-<<<<<<< HEAD
-    width: 25%;
-    height: 1600px;
-=======
     width: 30%;
->>>>>>> lol
     clear: right;
+    height: 100%;
 }
 
 #blackHrRight {
@@ -180,13 +170,8 @@ body {
     margin-bottom: 30px;
     width: 100%;
     height: 10px;
-<<<<<<< HEAD
-    border-left: 1px solid #555;
-    background: #555;
-=======
     border-left: 1px solid #333;
     background: #333;
->>>>>>> lol
 }
 
 #SearchH1 {
@@ -209,156 +194,124 @@ body {
     font-size: 17px;
 }
 
-<<<<<<< HEAD
-#containerRightTable {
-    width: 100%;
-}
-
-#containerRightTable li {
-    -webkit-transition: height .25s,line-height .25s, background .25s,visibility .25s;
-    transition: all .3s ease 0s;
-    border-top: 1px solid #dcdcdc;
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-    padding: 9px 20px 5px 20px;
-    font-size: 13px;
-    background: url(photo/rightarrow.png) 95% 48% no-repeat;
-}
-
-#containerRightTable ul {
-    padding-inline-start: 0px;
-}
-
-#containerRightTable ul li {
-    text-decoration: none;
-    color: #777;
-}
-
-#containerRightTable a {
-    text-decoration: none;
-}
-
-#containerRightTable li a :hover {opacity: 0.7;}
-
-#containerRightTable a :hover {background: #ececec;}
-
-
-
-footer {
-    background: #292929;        
-    display: flex;       
-    width: 100%;     
-    height: 100%;
-    color: white;  
-    padding-bottom: 100px;      
-    clear: both;      
-}
-
-footer::-webkit-scrollbar {
-    width: 0;
-  }
-
-#allColumnFooter {
-    font-size: 12px;
-    width: 100%;
-    display: flex;
-}
-
-#footerColumnFirst {
-    margin: 1% 50px 0 225px;
-}
-
-#footerColumnSecond {
-    margin-top: 1%;
-    width: 225px;
-    margin-right: 100px;
-}
-
-#footerColumnThird {
-    margin-top: 1%;
-    width: 250px;
-}
-
-#menuFooterFirst {
-    list-style-type: none;
-    padding-inline-start: 0;
-}
-
-#menuFooterFirst li {
-    display: inline-block;
-    font-size: 15px;
-    color: #fff;
-    width: 100%;
-    border-top: 1px solid #333;
-    padding: 10px;
-    text-decoration: none;
-    background-image: url(photo/rightarrow-dark.png) 95% 48% no-repeat;
-    -webkit-transition: height .25s,line-height .25s, background .25s,visibility .25s;
-    transition: all .3s ease 0s;
-    border-bottom: 1px dotted #444;
-}
-
-
-.footertText a {
-    background: yellow;
-    cursor: pointer;
-}
-
-=======
 #listMenu {
+    font-size: 14px;
+    width: 100%;
     list-style: none;
     padding-inline-start: 0;
 }
 
-.listMenuNestedContainerRight {
+.listMenuNested {
     list-style: none;
     padding-inline-start: 20px;
 }
 
-#listMenuContainerRight li a {
-    color: #777;
-}
-
-.li
-
-/* #containerRightTable li, .containerRightMenu {
-    width: 100%;
-    color: #777;
-    font-family: "Arial", arial, sans-serif;
-    font-size: 13px;
-    cursor: pointer;
-    -webkit-transition: height .25s,line-height .25s, background .25s,visibility .25s;
-    transition: all .3s ease 0s;
-    background: url(photo/rightarrow.png) 95% 48% no-repeat;
-    list-style: none;
-}
-
-#containerRightTable li {
-    width: 100%;
+#listMenuContainerRight li {
+    padding: 5px;
     border-top: 1px solid #dcdcdc;
-    padding: 9px 0 5px 20px;
-}   
-
-.containerRightMenu {
-    padding: 5px 0 5px 0;
-    display: block;
 }
 
-#containerRightTable a {
+.menuLinkNested {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+
+#listMenuContainerRight a {
+    text-decoration: none;
+    color: #777;
+}
+
+#listMenu a :hover {opacity: 0.7; background: #ececec;}
+.menuLinkNested:hover {opacity: 0.7; background: #ececec;}
+
+#menuAdContainerRight {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+}
+
+#menuAdContainerRight :nth-child(1) {
+    background: #9B20FF;
+}
+
+#menuAdContainerRight a {
+    background: #333;
+    font-size: 11px;
+    font-family: "Arial", arial, sans-serif;
+    color: white;
+    padding: 10px;
+    border-right: 1px solid #FFF;
     text-decoration: none;
 }
 
-.li-not-in-nested-list {
-    padding: 5px 0 5px 0;
+#menuAdContainerRight a:hover {background: #9B20FF;}
+
+
+#listPhotoContainerRightBottom {
     width: 100%;
-} */
+    height: 100%;
+    display: block;
+    position: relative;
+}
 
-#containerRightTable a :hover {opacity: 0.7; background: #ececec;}
+.photoAd {
+    display: block;
+    margin-top: 30px;
+}
 
+.photoAd img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+    display: block;
+}
 
+.photoAd p {
+    color: #555;
+    line-height: 100%;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
 
+.photoAd a {
+    font-size: 12px;
+    line-height: 100%;
+    font-weight: 700;
+    text-decoration: none;
+    color: #555;
+}
 
+.photoAd span {
+    padding: 3px;
+    color: white;
+    bottom: 0px;
+    width: 20px;
+    background: #B6B6B6;
+    height: 20px;
+    font-size: 11px;
+}
+
+#views {
+    bottom: 0;
+    line-height: 100%;
+}
+
+.photoAd a :hover{opacity: 0.2;}
+.photoAd p :hover{color: #9B20FF;}
+
+#cross {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    background: red;
+}
 
 footer {
     background: #292929;        
@@ -425,7 +378,6 @@ footer::-webkit-scrollbar {
     padding-bottom: 5px;
 }
 
->>>>>>> lol
 #menuFooterFirst a :hover {background: rgb(0, 0, 0);} 
 #menuFooterFirst a:hover {background: #500191;}
 
@@ -435,17 +387,19 @@ footer::-webkit-scrollbar {
 } 
 
 #footerContactPhoto a:hover {opacity: 0.7; background: #500191;}
-<<<<<<< HEAD
-=======
 
 
 .footerText a:hover {color:#9B20FF;}       
             
                
->>>>>>> lol
 
 
-.footerText a:hover {color:#9B20FF;}       
-            
-lol
-               
+
+
+
+
+
+
+
+
+
