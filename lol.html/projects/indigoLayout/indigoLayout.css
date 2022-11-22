@@ -50,6 +50,49 @@ body {
     margin: 0 0 0 auto;
 }
 
+#box2Drop {
+    display: none;
+}
+
+@media screen and (max-width: 771px){
+
+    #box1 {
+        width: 70%;
+    }
+
+    #box2 {
+        display: none;
+    }
+
+    #box2Drop {
+        display: none;
+    }
+
+    #link {
+        max-width: 771px;
+    }
+
+    #dropLink {
+        width: 30%;
+    }
+     #dropLink span {
+        display: inline;
+        position: relative;
+        width: 25px;
+        height: 25px;
+        float: right;
+        background: #f2f2f2 url(photo/rightarrow.png) 50% 50% no-repeat;
+    }
+    
+}
+
+#buttonDropLink:hover{animation: arrowDrop 1s ;}
+
+@keyframes arrowDrop {
+
+    100%{transform: rotate(-0.25turn)} 
+
+}
 
 #photoIndigo {
     margin-top: 20px;
@@ -165,6 +208,14 @@ body {
     height: 100%;
 }
 
+@media screen and (max-width: 771px) {
+    #containerRight {
+        float: left;
+        width: 70%;
+        margin-bottom: 100px;
+    }
+}
+
 #blackHrRight {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -195,10 +246,12 @@ body {
 }
 
 #listMenu {
-    font-size: 14px;
+    font-size: 12px;
+    font-family: "Arial", Helvetica, sans-serif;
     width: 100%;
     list-style: none;
     padding-inline-start: 0;
+    
 }
 
 .listMenuNested {
@@ -207,7 +260,7 @@ body {
 }
 
 #listMenuContainerRight li {
-    padding: 5px;
+    padding: 9px;
     border-top: 1px solid #dcdcdc;
 }
 
@@ -215,7 +268,7 @@ body {
     display: inline-block;
     height: 100%;
     width: 100%;
-    padding: 5px;
+    padding: 4px;;
 }
 
 #listMenuContainerRight a {
@@ -319,6 +372,7 @@ footer {
     width: 100%;     
     height: 100%;
     color: white;  
+    padding-right: 100px ;
     padding-bottom: 100px;      
     clear: both;      
 }
