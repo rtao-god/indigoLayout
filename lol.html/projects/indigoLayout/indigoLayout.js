@@ -4,7 +4,7 @@ $(".h1").css ({
     "font-size" : "25px",
     "width" : "70%",
     "color" : "black"
-})
+}) 
 
 $(".textP").css ({
     "font-family" : "Arial",
