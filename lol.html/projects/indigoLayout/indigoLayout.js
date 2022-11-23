@@ -17,7 +17,7 @@ $(".tagPExample").css ({
     "color" : "purple",
     "font-size" : "20px",
     "margin-left" : "230px",
-})
+})  
 
 $("#textResult").css ({
     "margin-bottom" : "150px"
