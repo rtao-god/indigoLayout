@@ -18,7 +18,7 @@ body {
 
 @media screen and (max-width: 771px){
     #containerAll {
-        width: 70%;
+        width: 100%;
         margin: 0;
     }
 }
@@ -398,6 +398,12 @@ footer {
     clear: both;      
 }
 
+@media screen and (max-width: 771px){
+    footer {
+        padding-right: 0;
+    }
+}
+
 footer::-webkit-scrollbar {
     width: 0;
   }
@@ -418,6 +424,7 @@ footer::-webkit-scrollbar {
         margin: 1% 50px 0 0;
     }
 }
+
 #footerColumnSecond {
     margin-top: 1%;
     width: 225px;

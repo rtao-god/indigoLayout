@@ -2,7 +2,7 @@ $(".h1").css ({
     "margin" : "50px 0 0 0",
     "font-family" : "Arial",
     "font-size" : "25px",
-    "width" : "75%",
+    "width" : "70%",
     "color" : "black"
 })
 
