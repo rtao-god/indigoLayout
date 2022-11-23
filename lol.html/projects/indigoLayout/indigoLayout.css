@@ -393,14 +393,13 @@ footer {
     width: 100%;     
     height: 100%;
     color: white;  
-    padding-right: 100%;
     padding-bottom: 100px;      
     clear: both;      
 }       
 
-@media screen and (max-width: 771px){
+@media screen and (min-width: 772px) and (max-width: 1075px) {
     footer {
-        padding-right: 0;
+        padding-right: 200px;
     }
 }
 
@@ -411,77 +410,45 @@ footer::-webkit-scrollbar {
 #allColumnFooter {
     font-family: "Arial", arial, sans-serif;
     font-size: 13px;
-    width: 100%;
     display: flex;
 }
    
+@media screen and (max-width: 771px){
+    #allColumnFooter {
+        display: block;
+    }
+}
+
 #footerColumnFirst {
-    margin: 1% 50px 0 225px;
+    margin: 1% 120px 0 225px;
+    width: 150%;
+}
+
+@media screen and (max-width: 771px) {
+    #footerColumnFirst {
+        width: 100%;
+    }
 }
 
 #menuFooterFirst {
+    width: 100%;
     list-style-type: none;
     padding-inline-start: 0;
 }
 
-@media screen and (max-width: 771px){
-    #footerColumnFirst {
-        margin: 1% 50px 0 0;
-    }
-}
-
-#footerColumnSecond {
-    margin-top: 1%;
-    height: 100%;
-    margin-right: 100px;
-}
-
-
-@media screen and (max-width: 771px){
-    #footerColumnSecond {
-        margin-right: 0;
-    }
-}
-
-
-#footerColumnThird {
-    margin-top: 1%;
-    width: 250px;
-}
-
-@media screen and (max-width: 771px){
-    #footerColumnThird {
-        display: flex;
-        height: 100%;
-        width: 100%;
-        flex-direction: column;
-    }
-}
-
-
-
 #menuFooterFirst li {
     font-family: "Arial", arial, sans-serif;
-    display: inline-block;
     font-size: 15px;
+    display: inline-block;
     color: #fff;
     width: 100%;
     border-top: 1px solid #333;
+    border-bottom: 1px dotted #444;
     padding: 10px;
     text-decoration: none;
     background: url(photo/rightarrow-dark.png) 95% 48% no-repeat;
     -webkit-transition: height .25s,line-height .25s, background .25s,visibility .25s;
     transition: all .3s ease 0s;
-    border-bottom: 1px dotted #444;
-}
-
-
-.footerText a {
-    color: white;
-    text-decoration: 0;
-    display: inline-block;
-    cursor: pointer;
-    padding-bottom: 5px;
 }
 
 #menuFooterFirst a :hover {background: rgb(0, 0, 0);} 
@@ -494,11 +461,38 @@ footer::-webkit-scrollbar {
 
 #footerContactPhoto a:hover {opacity: 0.7; background: #500191;}
 
+@media screen and (max-width: 771px){
+    #footerColumnFirst {
+        margin: 1% 50px 0 0;
+    }
+}
 
-.footerText a:hover {color:#9B20FF;}       
-            
-               
 
+#footerColumnSecond {
+    margin-top: 1%;
+    width: 100%;
+}
+
+#footerColumnThird {
+    margin: 1% 50px 0 100px;
+    width: 100%;
+}
+
+@media screen and (max-width: 771px){
+    #footerColumnThird {
+        margin: 1% 50px 0 0;
+    }
+}
+         
+.footerText a {
+    color: white;
+    text-decoration: 0;
+    display: inline-block;
+    cursor: pointer;
+    padding-bottom: 5px;
+}   
+
+.footerText a:hover {color:#9B20FF;} 
 
 
 
