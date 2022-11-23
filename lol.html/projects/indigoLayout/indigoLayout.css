@@ -18,7 +18,7 @@ body {
 
 @media screen and (max-width: 771px){
     #containerAll {
-        width: 70%;
+        width: 100%;
         margin: 0;
     }
 }
