@@ -13,14 +13,48 @@ $(".textP").css ({
     "width" : "90%"
 })
 
-$(".tagPreExample").css ({
+$(".tagPExample").css ({
     "color" : "purple",
-    "font-size" : "15px"
+    "font-size" : "20px",
+    "margin-left" : "230px",
 })
 
 $("#textResult").css ({
     "margin-bottom" : "150px"
 })
+
+
+function replaceTag( element, newTag )
+{
+    var elementNew = document.createElement( newTag );
+    elementNew.innerHTML = element.innerHTML;
+
+    Array.prototype.forEach.call( element.attributes, function( attr ) {
+        elementNew.setAttribute( attr.name, attr.value );
+    });
+
+    element.parentNode.insertBefore( elementNew, element );
+    element.parentNode.removeChild( element );
+    return elementNew;
+}
+
+let screen = document.documentElement.clientWidth
+console.log(screen)
+
+document.querySelectorAll(".tagPExample").forEach((element) => {
+
+    if ( screen < 771 ) { 
+        element.style.marginLeft = "30px"
+        console.log(element)
+    } 
+})
+
+
+
+
+
+
+    
 
 
 let date = new Date ().toLocaleDateString()

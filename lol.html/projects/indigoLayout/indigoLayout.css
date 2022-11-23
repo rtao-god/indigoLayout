@@ -19,6 +19,7 @@ body {
 @media screen and (max-width: 771px){
     #containerAll {
         width: 70%;
+        margin: 0;
     }
 }
 
@@ -205,6 +206,13 @@ body {
     clear: left;
 }
 
+@media screen and (max-width: 771px) {
+    #containerLeft {
+        width: 100%;
+    }
+    
+}
+
 #violetHrLeft {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -233,7 +241,7 @@ body {
 @media screen and (max-width: 771px) {
     #containerRight {
         float: left;
-        width: 70%;
+        width: 100%;
         margin-bottom: 100px;
     }
 }
@@ -379,15 +387,6 @@ body {
 .photoAd a :hover{opacity: 0.2;}
 .photoAd p :hover{color: #9B20FF;}
 
-#cross {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    padding-top: 5px;
-    padding-left: 5px;
-    background: red;
-}
-
 footer {
     background: #292929;        
     display: flex;       
@@ -409,11 +408,16 @@ footer::-webkit-scrollbar {
     width: 100%;
     display: flex;
 }
-
+   
 #footerColumnFirst {
     margin: 1% 50px 0 225px;
 }
 
+@media screen and (max-width: 771px){
+    #footerColumnFirst {
+        margin: 1% 50px 0 0;
+    }
+}
 #footerColumnSecond {
     margin-top: 1%;
     width: 225px;
