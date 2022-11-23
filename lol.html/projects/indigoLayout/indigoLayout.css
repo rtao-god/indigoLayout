@@ -10,15 +10,22 @@ body {
 
 #containerAll {
     height: 100%;
-    margin: 0 auto 0 auto;
+    margin: 0 auto ;
     width: 1050px;
     padding: 0;
     color: #555555;
 } 
 
+@media screen and (max-width: 771px){
+    #containerAll {
+        width: 70%;
+    }
+}
+
 #link {
     align-items: center;
     display: flex;
+    width: 100%;
     background: #EEEEEE;
     padding: 3px 0 3px 0;
  
@@ -96,11 +103,23 @@ body {
 
 #photoIndigo {
     margin-top: 20px;
+    display: block;
     float: left;
+}
+
+#photoIndigo a {
+    display: block;
 }
 
 #photoIndigo :hover{opacity: 0.7;}
 #telephone :hover{opacity: 0.7;}
+
+#photoIndigoAndTelephone {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-bottom: 110px;
+}
 
 #telephone {
     margin: 20px 0 0 0;
@@ -110,12 +129,14 @@ body {
 }
 
 #telNomer {
+    float: right;
     margin: 0 0 0 0;
     color: #9B20FF;
     font-size: 30px;
 }
 
 #telText {
+    width: 100%;
     margin: 0 0 0 0;
     color: #9B20FF;
     font-size: 25px;
@@ -123,31 +144,27 @@ body {
 
 
 #linkMenu {
-    margin: 20px 0 0 0;
-    list-style-type: none;
-    text-decoration: none;
-    width: 1050px;
+    background: #333;
+    list-style-type: none; 
     font-family: "Scada", arial, sans-serif;
     font-weight: bold;
-    text-transform: uppercase;
-    font-size: 13px;
-    background: #333;
-    display: inline-flex;
-    height: 100%;
-    align-items: center;
     padding-inline-start: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
     -webkit-transition: height .25s,line-height .25s, background .25s,visibility .25s;
     transition: all .3s ease 0s;
 }
 
-#linkMenu li a {
+#linkMenu a {
+    display: flex;
+    font-size: 13px;
+    flex-wrap: wrap;
     padding: 10px 10px 10px 10px;
-    display: inline-flex;
     text-decoration: none;
     color: #fff;
-    margin: 0 0 0 0;
     background: url(photo/navdiv.png) no-repeat right 50%;
-    align-items: center;
 }
 
 #linkMenu li {
@@ -174,7 +191,12 @@ body {
     margin: 0;
 }
 
-
+@media screen and (max-width: 771px) {
+    #breadcrumbs {
+        display: block;
+    }
+}
+    
 #breadcrumbs a:hover{color: #9B20FF;}
 
 #containerLeft {
@@ -372,7 +394,7 @@ footer {
     width: 100%;     
     height: 100%;
     color: white;  
-    padding-right: 100px ;
+    padding-right: 100%;
     padding-bottom: 100px;      
     clear: both;      
 }
