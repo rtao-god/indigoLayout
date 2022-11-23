@@ -419,6 +419,11 @@ footer::-webkit-scrollbar {
     margin: 1% 50px 0 225px;
 }
 
+#menuFooterFirst {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
 @media screen and (max-width: 771px){
     #footerColumnFirst {
         margin: 1% 50px 0 0;
@@ -427,19 +432,33 @@ footer::-webkit-scrollbar {
 
 #footerColumnSecond {
     margin-top: 1%;
-    width: 225px;
+    height: 100%;
     margin-right: 100px;
 }
+
+
+@media screen and (max-width: 771px){
+    #footerColumnSecond {
+        margin-right: 0;
+    }
+}
+
 
 #footerColumnThird {
     margin-top: 1%;
     width: 250px;
 }
 
-#menuFooterFirst {
-    list-style-type: none;
-    padding-inline-start: 0;
+@media screen and (max-width: 771px){
+    #footerColumnThird {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
 }
+
+
 
 #menuFooterFirst li {
     font-family: "Arial", arial, sans-serif;
