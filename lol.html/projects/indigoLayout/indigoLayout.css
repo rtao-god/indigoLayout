@@ -11,17 +11,51 @@ body {
 #containerAll {
     height: 100%;
     margin: 0 auto ;
-    width: 1050px;
     padding: 0;
     color: #555555;
 } 
 
-@media screen and (max-width: 771px){
+/* @media screen and (max-width: 1085px) {
     #containerAll {
-        width: 100%;
-        margin: 0;
+        width: 791px;   
+    }
+} */
+
+/* @media screen and (max-width: 855px) {
+    #containerAll {
+        width: 661px;
     }
 }
+
+@media screen and (max-width: 771px){
+    #containerAll {
+        width: 539px;
+    }
+}
+
+@media screen and (max-width: 607px) {
+    #containerAll {
+        width: 420px;
+    }
+}
+
+@media screen and (max-width: 583px) {
+    #containerAll {
+        width: 430px;
+    }
+} 
+
+@media screen and (max-width: 500px) {
+    #containerAll {
+        width: 358px;
+    }
+} 
+
+@media screen and (max-width: 405px) {
+    #containerAll {
+        width: 263px;
+    }
+}  */
 
 #link {
     align-items: center;
@@ -81,26 +115,23 @@ body {
     }
 
     #dropLink {
-        width: 30%;
+        width: 30px;
+        float: right;
+        height: 30px;
+        margin-left: 50%;
     }
      #dropLink span {
-        display: inline;
+        display: inline-block;
         position: relative;
         width: 25px;
         height: 25px;
-        float: right;
+  
         background: #f2f2f2 url(photo/rightarrow.png) 50% 50% no-repeat;
     }
     
 }
 
-#buttonDropLink:hover{animation: arrowDrop 1s ;}
-
-@keyframes arrowDrop {
-
-    100%{transform: rotate(-0.25turn)} 
-
-}
+#dropLink:hover{animation: arrowDrop 1s ;}
 
 #photoIndigo {
     margin-top: 20px;
@@ -130,18 +161,28 @@ body {
 }
 
 #telNomer {
-    float: right;
     margin: 0 0 0 0;
     color: #9B20FF;
     font-size: 30px;
+    float: right;
 }
 
 #telText {
-    width: 100%;
-    margin: 0 0 0 0;
     color: #9B20FF;
     font-size: 25px;
 }
+
+@media screen and (max-width: 771px) {
+    #telNomer {
+        font-size: 27px;
+    }
+
+    #telText {
+        font-size: 15px;
+        
+    }
+}
+    
 
 
 #linkMenu {
@@ -174,6 +215,51 @@ body {
 
 #linkMenu li a:hover{background: #9B20FF}
 
+#linkMenuDrop {
+    display: none;
+}
+
+@media screen and (max-width: 607px) {
+    #linkMenu {
+        display: none;
+    }
+
+    #linkMenuDrop {
+        background: #333;
+        display: block;
+        width: 100%;
+        height: 30px;
+    }
+
+    #linkMenuDropLi {
+        list-style-type: none;
+        display: none;
+    }
+
+    #linkMenuDropLi a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    #spanLinkMenuDrop {
+        width: 30px;
+        height: 30px;
+        float: right;
+    }
+
+    #linkMenuDrop span {
+        display: inline-block;
+        background: url(photo/rightarrow-dark.png) 40% 50% no-repeat;
+        width: 30px;
+        height: 30px;
+    }
+
+    #linkMenuDrop span:hover{animation: arrowDrop 1s;}
+}
+
+@keyframes arrowDrop {
+    100%{transform: rotate(-0.25turn)} 
+}
 
 #breadcrumbs {
     display: flex;
@@ -397,9 +483,13 @@ footer {
     clear: both;      
 }       
 
-@media screen and (min-width: 772px) and (max-width: 1075px) {
-    footer {
-        padding-right: 200px;
+@media screen and (max-width: 771px) {
+    #allColumnFooter {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        margin-left: 130px;
+
     }
 }
 
@@ -413,9 +503,13 @@ footer::-webkit-scrollbar {
     display: flex;
 }
    
-@media screen and (max-width: 771px){
+@media screen and (max-width: 771px) {
     #allColumnFooter {
         display: block;
+        margin: 0 auto;
+        width: 100%;
+        margin-left: 130px;
+
     }
 }
 
@@ -424,9 +518,17 @@ footer::-webkit-scrollbar {
     width: 150%;
 }
 
+@media screen and (min-width: 772px) and (max-width: 1245px) {
+    #footerColumnFirst {
+        margin: 1% 120px 0 70px ;
+    }
+}
+
 @media screen and (max-width: 771px) {
     #footerColumnFirst {
         width: 100%;
+        margin: 1% 50px 0 0;
+        width: 50%;
     }
 }
 
@@ -460,13 +562,6 @@ footer::-webkit-scrollbar {
 } 
 
 #footerContactPhoto a:hover {opacity: 0.7; background: #500191;}
-
-@media screen and (max-width: 771px){
-    #footerColumnFirst {
-        margin: 1% 50px 0 0;
-    }
-}
-
 
 #footerColumnSecond {
     margin-top: 1%;
