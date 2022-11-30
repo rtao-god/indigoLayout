@@ -8,7 +8,7 @@ $(".h1").css ({
     "width" : "70%",
     "color" : "#111",
     "font-height" : "27px;"
-}) 
+})
 
 $(".textP").css ({
     "font-family" : "Arial",
@@ -21,7 +21,7 @@ $(".tagPExample").css ({
     "color" : "purple",
     "font-size" : "20px",
     "margin-left" : "230px",
-})  
+})
 
 $("#textResult").css ({
     "margin-bottom" : "150px"
@@ -47,24 +47,24 @@ console.log("screen: " + screen)
 
 document.querySelectorAll(".tagPExample").forEach((element) => {
 
-    if ( screen < 771 ) { 
+    if ( screen < 771 ) {
         element.style.marginLeft = "30px"
-       
-    } 
+
+    }
 })
 
 document.querySelectorAll(".h1").forEach((element) => {
 
-    if ( screen < 771 ) { 
+    if ( screen < 771 ) {
         element.style.width = "100%"
-       
-    } 
+
+    }
 })
 
 
 
-// меняем width containerAll при сжатии экрана. Зачем? - margin containerAll влияет на левый и правый отступ всего сайта. 
-// При сжатии экрана margin уменьшается и в какой-то момент значение становится нулем и content сайта примыкает к границам экрана. 
+// меняем width containerAll при сжатии экрана. Зачем? - margin containerAll влияет на левый и правый отступ всего сайта.
+// При сжатии экрана margin уменьшается и в какой-то момент значение становится нулем и content сайта примыкает к границам экрана.
 // Чтобы вернуть обратно отступы надо уменьшить width containerAll примерно на 50px
 
 
@@ -74,35 +74,35 @@ let marginLeft = parseInt(getComputedStyle(containerAll, null).marginLeft)
 
 console.log("marginLeft: " + marginLeft)
 
-let gethWidth = containerAll.offsetWidth 
+let gethWidth = containerAll.offsetWidth
 console.log("width: " + gethWidth)
 
 
-if (marginLeft < 57 && screen > 1060 ) {    // 57 - примерно такой margin находится слишком близко к краю экрана. 1060 - примерно на таком разрешении экрана 213 не хватает, так что функция перестает работать 
-    
-    
+if (marginLeft < 57 && screen > 1060 ) {    // 57 - примерно такой margin находится слишком близко к краю экрана. 1060 - примерно на таком разрешении экрана 213 не хватает, так что функция перестает работать
+
+
     let normalWidth = gethWidth - 50      // если условие выше вернет true, то это значит то, что width сейчас слишком большой для данного разрешения экрана. Примерно на 50 его надо уменьшить для получения нормального width
     console.log("normalWidth: " + normalWidth)
 
-    let changeWidth = containerAll.style.width = normalWidth + "px"                                        
+    let changeWidth = containerAll.style.width = normalWidth + "px"
     console.log("modified width: " + changeWidth)
-        
+
 
     let marginLeft = parseInt(getComputedStyle(containerAll, null).marginLeft)
     console.log("marginLeft: " + marginLeft)
 
-    let changeMarginRight = containerAll.style.marginRight = marginLeft + "px" 
-    let changeMarginLeft = containerAll.style.marginLeft = marginLeft + "px" 
+    let changeMarginRight = containerAll.style.marginRight = marginLeft + "px"
+    let changeMarginLeft = containerAll.style.marginLeft = marginLeft + "px"
 
 }
 
 function topBarDropFunction () {
-        
+
     $("#dropTopBar").css ({
         "height" : "100%",
         "width" : "100%",
         "float" : "none",
-        "margin-left" : "0",    
+        "margin-left" : "0",
     })
 
     $("#topBar").css ({
@@ -156,12 +156,12 @@ function topBarDropFunction () {
         $("#box2Drop a").css ({
             "background" : "url(photo/rightarrow.png) 95% 48% no-repeat"
         })
-    
+
         $("#dropTopBar").css ({
             "margin-left" : "1%"
         })
     }
-    
+
 }
 
 $("#arrowTopBar").click(function () {
@@ -173,7 +173,7 @@ $("#arrowTopBar").click(function () {
 
     $("#arrowTopBar").css({
         "transform" : "rotate(0.5turn)"
-    })  
+    })
 })
 
 if(screen < 405) {
@@ -182,9 +182,22 @@ if(screen < 405) {
     })
 }
 
-$("#arrowTopBar").css({
-    "transform" : "rotate(1turn)"
-})
+
+
+
+
+function dropLinkMenuFunction () {
+
+    $("#linkMenuDropLi").slideToggle(".active")
+
+    $("#linkMenuDropLi").css ({
+        "display" : "block",
+        "list-style-type" : "none"
+    })
+
+    document.getElementById("menuDropArrow").innerHTML = ("Свернуть меню")
+   
+}
 
 
 
@@ -192,8 +205,44 @@ $("#arrowTopBar").css({
 
 
 
+function deleteCapitalLetters () {
+
+    let strText = $("#linkMenu").text().split(" ").filter(element => element !== "" && element !== "\n")
+
+    console.log(strText)
+
+    for(let i of strText) {
+        strText = i.toLowerCase ()
+        console.log(strText)
+        
+    }
+
+    /* strText.forEach( (element) => {
+
+        strText = [element.toLowerCase ()]
+        console.log(strText)
 
 
+    }) */
 
+    console.log(strText)
+
+/* 
+
+    
+
+    element.toLowerCase()
+
+
+    }) 
+
+    console.log(strText) */
+                                                                   /* filter(element => element !== " " && element !== "\n") */
+}
+
+deleteCapitalLetters () 
+
+
+// $("#linkMenuDropLi a").deleteCapitalLetters ()
 
 
